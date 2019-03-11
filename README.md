@@ -1,2 +1,3 @@
 # on-muhasebe
-Ön Muhasebe
+Ön Muhasebe Projesi
+v1.0.0.0
