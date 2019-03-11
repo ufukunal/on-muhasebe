@@ -1,0 +1,101 @@
+/*
+* Name:        Admin Html
+* Written by:   Unifato - (http://unifato.com)
+* Version:      1.0.0
+*/
+/* Page Pre Loader
+========================*/
+body:after {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99;
+  background: #fff; }
+
+body.pace-done:after {
+  display: none; }
+
+.pace {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #fff;
+  z-index: 100;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+
+.pace-active {
+  opacity: 1;
+  visibility: visible; }
+
+.pace-active * {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+.pace-inactive {
+  opacity: 0;
+  visibility: hidden; }
+
+.pace-activity {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
+  width: 1em;
+  height: 1em;
+  font-size: 70px;
+  display: block; }
+
+.pace-activity::before,
+.pace-activity::after {
+  content: "";
+  top: 0;
+  display: block;
+  width: 1em;
+  height: 1em;
+  position: absolute;
+  border-width: 0.5em;
+  border-style: double;
+  border-color: transparent;
+  border-radius: 1em;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-animation: spin 1.15s infinite;
+          animation: spin 1.15s infinite; }
+
+.pace-activity::before {
+  right: 0;
+  border-right-color: #8253eb;
+  -webkit-animation-delay: -0.29s;
+          animation-delay: -0.29s; }
+
+.pace-activity::after {
+  left: 0;
+  border-left-color: #8253eb; }
+
+@-webkit-keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes spin {
+  from {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+/*# sourceMappingURL=pace.css.map */
