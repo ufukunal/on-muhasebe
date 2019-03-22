@@ -1,2 +1,3 @@
-# on-muhasebe
-Ön Muhasebe
+# Ön Muhasebe
+- İnstallation
+--- php artisan migrate
